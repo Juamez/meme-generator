@@ -1,42 +1,65 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(41, 35, 35);
+  color: rgb(224, 222, 222);
+}
+
+.form {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 17px;
+  margin-bottom: 17px;
+}
+
+.form input {
+  background-color: rgb(114, 112, 112);
+  border-radius: 5px;
+  border: 1px solid #D5D4D8;
+  text-indent: 5px;
+  width: 40vw;
+}
+
+.form button {
+  grid-column: 1 / -1;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(119, 56, 219); 
+  color: rgb(236, 236, 236);
+  height: 40px;
+  width: 80vw;
+}
+.meme-description {
+  position: relative;
+}
+
+.meme-description img {
+  max-width: 90vw;
+  border-radius: 3px;
+}
+
+.text {
+  position: absolute;
+  width: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
   text-align: center;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.topText {
+  top: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-button {
-  font-size: calc(10px + 2vmin);
+.bottomText {
+  bottom: 0;
 }
