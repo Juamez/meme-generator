@@ -11,9 +11,10 @@ body {
 
 .form {
   display: grid;
-  grid-template: 40px 40px / 1fr 1fr;
+  grid-template: 40px / 1fr;
   gap: 17px;
-  margin-bottom: 17px;
+  margin-top: 50px;
+  justify-items: center;
 }
 
 .form input {
@@ -22,6 +23,8 @@ body {
   border: 1px solid #D5D4D8;
   text-indent: 5px;
   width: 40vw;
+  height: 80%;
+  margin: 0 0 20px 20px;
 }
 
 .form button {
@@ -33,14 +36,17 @@ body {
   color: rgb(236, 236, 236);
   height: 40px;
   width: 80vw;
+  margin-left: 30px;
 }
 .meme-description {
   position: relative;
+  margin-top: 60px;
 }
 
 .meme-description img {
-  max-width: 90vw;
-  border-radius: 3px;
+  max-width: 50vw;
+  max-height: 60vh;
+  border-radius: 4px;
 }
 
 .text {
