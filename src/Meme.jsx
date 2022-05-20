@@ -28,6 +28,11 @@ export function Meme() {
       ...prev,
       imageUrl: url
     }))
+    setMemes(reboot => ({
+      ...reboot,
+      topText: "",
+      bottomText: "",
+    }))
   }
 
   function handleChange(e) {
