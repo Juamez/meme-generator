@@ -39,7 +39,7 @@ export function Meme() {
   }
   return (
     <main className="form">
-      <div>
+      <div className="input-container">
       <input 
         type="text" 
         name="topText"
